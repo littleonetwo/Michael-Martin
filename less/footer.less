@@ -1,0 +1,39 @@
+
+
+footer{
+  background-color: @bg-c2-a;
+  height:350px;
+  .flex(center, center, row, wrap);
+
+  .footer-container{
+    .flex(center,center, row, wrap);
+  }
+  div{
+    //width:20%;
+    &.terms{
+      width:80%;
+      .flex(center, center, row, nowrap);
+    }
+  }
+
+  nav{
+    .flex(center, center, column, nowrap);
+
+    &.terms{
+      .flex(center, center, row, nowrap);
+      width:100%;
+      a{
+        width:auto;
+      }
+      p{
+        margin: 18px 5px;
+        font-size: 1.2rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+#footer-logo{
+  width: 150px;
+}

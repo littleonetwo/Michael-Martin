@@ -1,0 +1,311 @@
+
+/*header related styles after here*/
+header{
+
+  width:100%;
+
+  .top-nav {
+  background-image: url('../img/header.jpeg');
+  width: 100%;
+  height: 300px;
+  }
+}
+
+#top-logo{
+  width: 100px;
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: .8rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider { //the background of the toggle
+  background-color: @bg-c2-a;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before { //the dot in the toggle
+  background-color: @bg-c-a;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 15px;
+}
+
+input:checked + .slider {
+  background-color: @bg-c2-d;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* main content styles go here */
+
+
+section{
+
+  height: 600px;
+
+
+
+  &.content-row{
+    width: 100%;
+    margin: 25px 0 0 0;
+    padding-bottom: 30px;
+
+
+    &:last-of-type{
+      height: 470px;
+    }
+
+    &.alt{
+      background-color: @bg-c2-a;
+      padding-top: 30px;
+      height: 630px;
+
+    }
+
+    a{
+      text-decoration: none;
+      color: @font-a;
+      font-size: 1.5rem;
+    }
+
+
+
+    div{
+      width:80%;
+      margin: 0 10%;
+
+
+    }
+
+    div div{
+      width: 35%;
+      margin: 0;
+    }
+
+
+    .window-container{
+      width:100%;
+      .flex(center,center, row, wrap);
+
+      a {
+        margin-top: 50px;
+        position: relative;
+        left: 35%;
+      }
+
+      .window-app{
+        width:50%;
+
+        img{
+          margin: 30px 5%;
+          width:400px;
+        }
+
+      }
+
+      .window-app-buttons{
+        width: 40%;
+        .flex(center, center, column, wrap);
+        a{
+          margin:0;
+          position: inherit;
+
+        }
+        img{
+          width: 200px;
+          height: 70px;
+          margin: 15px 0;
+        }
+      }
+
+      .window{
+        width: 28%;
+        height: 450px;
+        margin:0;
+        margin-top: 30px;
+        border: 1px solid @font-a;
+
+
+        .window-stats{
+          .flex(center,center, row, wrap);
+        }
+
+        .likes, .views{
+          height: 20px;
+          width: 40px;
+
+          img{
+            height:20px;
+            width:20px;
+            border: none;
+          }
+        }
+
+
+        p, h3 {
+          padding: 10px;
+        }
+
+        p{
+          font-size: 1.2rem;
+        }
+
+        h3{
+          font-size: 1.5rem;
+        }
+
+        img{
+          border-bottom: 1px solid @font-a;
+          width:100%;
+          height:198px;
+        }
+
+        &:first-of-type{
+          margin-left: 5%;
+          margin-right: 2%;
+        }
+
+        &:last-of-type{
+          margin-left: 2%;
+          margin-right: 5%;
+        }
+
+      }
+    }
+
+  }
+
+  &.content-row-show{
+    background-color: @bg-c2-a;
+    padding-top: 30px;
+    height: 630px;
+
+
+    div{
+      width:80%;
+      margin: 0 10%;
+
+    }
+
+    a {
+
+      margin-top: 50px;
+      position: relative;
+      left: 80%;
+      text-decoration: none;
+      color: @font-a;
+      font-size: 1.5rem;
+    }
+
+    .window-container{
+      width:100%;
+      .flex(center,center, row, wrap);
+      margin:0;
+
+
+
+      //div{
+      //  width: 40%;
+      //}
+
+
+
+      .window{
+        width: 40%;
+        height: 450px;
+        margin: 5px 5%;
+
+        &:last-of-type{
+          padding-top: 15%;
+
+        }
+
+
+
+
+        .window-stats{
+          .flex(center,center, row, wrap);
+        }
+
+        .likes, .views{
+          height: 20px;
+          width: 40px;
+
+          img{
+            height:20px;
+            width:20px;
+            border: none;
+          }
+        }
+
+
+        p, h3 {
+          padding: 10px;
+        }
+
+        p{
+          font-size: 1.7rem;
+        }
+
+        h3{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+#show-window{
+  margin: 0;
+  height: 420px;
+
+}
+
+#about{
+  border-bottom: 2px solid @font-a;
+  height: 270px;
+  div{
+    .flex(space-between,center,row,wrap);
+  }
+}
