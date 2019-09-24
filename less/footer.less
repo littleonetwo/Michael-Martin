@@ -3,16 +3,94 @@
 footer{
   background-color: @bg-c2-a;
   height:350px;
+
+  h3{
+    font-size: 1.7rem;
+  }
   .flex(center, center, row, wrap);
 
   .footer-container{
-    .flex(center,center, row, wrap);
+    .flex(center,flex-start, row, wrap);
+
+  .footer-window{
+    .flex(center, center, row, nowrap);
+    width: 100%;
+    margin-top: 50px;
+    .logo{
+      margin: 0 2%;
+    }
+
+    .links{
+      width:20%;
+      //height:200px;
+      margin: 5px 2%;
+
+      nav a{
+        margin: 5px 0;
+      }
+    }
+
+    .about{
+      width:20%;
+      margin: 5px 2%;
+      position: relative;
+      top: -23px;
+
+      nav a{
+        margin: 5px 0;
+      }
+    }
+
+    .resources{
+      width:20%;
+      margin: 5px 2%;
+      position: relative;
+      top: -16px;
+
+      nav a{
+        margin: 5px 0;
+      }
+    }
+
   }
+  .social-media{
+
+
+
+    .social-link{
+      height: 40px;
+      width: 40px;
+    }
+
+
+    .social-app{
+      img{
+        width: 140px;
+        height: 45px;
+      }
+
+    }
+
+    nav{
+      .flex(center, center, row, nowrap);
+
+      a{
+        margin: 5px .5%;
+
+
+        }
+      }
+    }
+  }
+}
+
+
   div{
     //width:20%;
     &.terms{
       width:80%;
       .flex(center, center, row, nowrap);
+      margin-top: 80px;
     }
   }
 
@@ -32,7 +110,7 @@ footer{
       }
     }
   }
-}
+
 
 #footer-logo{
   width: 150px;

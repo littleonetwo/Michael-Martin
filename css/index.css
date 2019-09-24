@@ -175,20 +175,20 @@ img {
   background-color: white;
   width: 1200px;
 }
-nav a {
+.inside-nav nav a {
   margin: 15px 5px;
   font-size: 1.1rem;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  width: 25%;
+  width: 20%;
 }
 @media (max-width: 500px) {
-  nav a {
+  .inside-nav nav a {
     margin: 25px 20%;
   }
 }
-nav {
+.inside-nav nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -196,7 +196,7 @@ nav {
   width: 30%;
 }
 @media (max-width: 500px) {
-  nav {
+  .inside-nav nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -205,7 +205,7 @@ nav {
     right: 135px;
   }
 }
-.search-bar {
+.inside-nav .search-bar {
   background-color: #000000;
   color: #696e6d;
 }
@@ -217,36 +217,93 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+footer h3 {
+  font-size: 1.7rem;
+}
 footer .footer-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
-footer div.terms {
-  width: 80%;
+footer .footer-container .footer-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-top: 50px;
+}
+footer .footer-container .footer-window .logo {
+  margin: 0 2%;
+}
+footer .footer-container .footer-window .links {
+  width: 20%;
+  margin: 5px 2%;
+}
+footer .footer-container .footer-window .links nav a {
+  margin: 5px 0;
+}
+footer .footer-container .footer-window .about {
+  width: 20%;
+  margin: 5px 2%;
+  position: relative;
+  top: -23px;
+}
+footer .footer-container .footer-window .about nav a {
+  margin: 5px 0;
+}
+footer .footer-container .footer-window .resources {
+  width: 20%;
+  margin: 5px 2%;
+  position: relative;
+  top: -16px;
+}
+footer .footer-container .footer-window .resources nav a {
+  margin: 5px 0;
+}
+footer .footer-container .social-media .social-link {
+  height: 40px;
+  width: 40px;
+}
+footer .footer-container .social-media .social-app img {
+  width: 140px;
+  height: 45px;
+}
+footer .footer-container .social-media nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
 }
-footer nav {
+footer .footer-container .social-media nav a {
+  margin: 5px 0.5%;
+}
+div.terms {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-top: 80px;
+}
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
 }
-footer nav.terms {
+nav.terms {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
   width: 100%;
 }
-footer nav.terms a {
+nav.terms a {
   width: auto;
 }
-footer nav.terms p {
+nav.terms p {
   margin: 18px 5px;
   font-size: 1.2rem;
   padding: 0;

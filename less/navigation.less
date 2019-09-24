@@ -5,35 +5,35 @@
   background-color: @bg-c-l;
   width: @maxcontainer;
 
-}
+  nav a{
+    //.flex(space-between, center, row, nowrap);
+    margin: 15px 5px;
+    font-size: 1.10rem;
+    text-decoration: none;
+    color: @font-light;
+    font-weight:bold;
+    width: 20%;
+    @media @mobile{
 
-nav a{
-  //.flex(space-between, center, row, nowrap);
-  margin: 15px 5px;
-  font-size: 1.10rem;
-  text-decoration: none;
-  color: @font-light;
-  font-weight:bold;
-  width: 25%;
-  @media @mobile{
-
-    margin: 25px 20%;
-  }
-}
-
-nav{
-  .flex(space-around, center, row, nowrap);
-  width:30%;
-  @media @mobile{
-    .flex(flex-start, center, row, nowrap);
-    position: relative;
-    right: 135px;
+      margin: 25px 20%;
+    }
   }
 
-}
+  nav{
+    .flex(space-around, center, row, nowrap);
+    width:30%;
+    @media @mobile{
+      .flex(flex-start, center, row, nowrap);
+      position: relative;
+      right: 135px;
+    }
 
-.search-bar{
+  }
 
-  background-color: @bg-c-d;
-  color: @font-dark;
+  .search-bar{
+
+    background-color: @bg-c-d;
+    color: @font-dark;
+  }
+
 }
