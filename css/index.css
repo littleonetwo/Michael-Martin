@@ -173,7 +173,7 @@ img {
   align-items: center;
   flex-flow: row nowrap;
   background-color: white;
-  width: 1200px;
+  width: 100%;
 }
 @media (max-width: 1000px) {
   .inside-nav {
